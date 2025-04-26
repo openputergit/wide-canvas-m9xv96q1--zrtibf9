@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वेदश्री साठी मदत करा</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .clay {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 
+                8px 8px 16px rgba(174, 174, 192, 0.4),
+                -8px -8px 16px rgba(255, 255, 255, 0.9);
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, #4CAF50 var(--progress), transparent var(--progress));
+        }
+    </style>
+</head>
+<body class="bg-blue-50 font-[Poppins]">
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+        <div class="clay mb-8">
+            <h1 class="text-2xl md:text-3xl font-semibold text-center text-blue-900 mb-6">वेदश्री साठी मदत करा 🙏🏻</h1>
+            
+            <div class="mb-6">
+                <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80" alt="Medical Support" class="w-full h-48 object-cover rounded-xl mb-4">
+            </div>
+
+            <div class="text-gray-700 space-y-4 mb-8">
+                <p>एका लहान मुलीचं बालपण जीव वाचवण्यासाठी तुमच्याकडे हात जोडून विनंती करतोय.🙏🏻🙏🏻</p>
+                <p>माझी मुलगी वेदश्री लक्ष्मीकांत सोनार वय (१६ महिने) हिला Bilateral Acoustic Neuroma / Vestibular Schwannoma या दुर्मिळ आजाराने ग्रासले आहे.</p>
+                <p>Cochlear मशीन उपचारासाठी कुटुंबाने शक्य ती मदत गोळा केली आहे, पण अजून ₹30,00,000 रुपयांची गरज आहे.</p>
+            </div>
+
+            <div class="clay mb-8">
+                <div class="flex justify-between mb-2">
+                    <span class="font-semibold">Target: ₹30,00,000</span>
+                    <span class="font-semibold">Raised: ₹2,50,000</span>
+                </div>
+                <div class="w-full h-4 bg-gray-200 rounded-full overflow-hidden progress-bar" style="--progress: 42%"></div>
+                <div class="text-center mt-2 text-sm text-gray-600">4% Collected</div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 mb-8">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/2560px-Paytm_Logo_%28standalone%29.svg.png" alt="Paytm" class="h-8 object-contain">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/2560px-Google_Pay_Logo.svg.png" alt="GPay" class="h-8 object-contain">
+                <img src="https://download.logo.wine/logo/PhonePe/PhonePe-Logo.wine.png" alt="PhonePe" class="h-8 object-contain">
+            </div>
+
+            <a href="https://getupilink.com/upi/8329562560@axl" class="block w-full bg-green-500 hover:bg-green-600 text-white text-center py-4 rounded-xl font-semibold mb-6 transition duration-300 clay">
+                Donate Now
+            </a>
+
+            <div class="flex justify-center space-x-4">
+                <button onclick="shareOnWhatsApp()" class="flex items-center bg-green-500 text-white px-6 py-2 rounded-lg">
+                    <i class="bi bi-whatsapp mr-2"></i> Share
+                </button>
+                <button onclick="shareOnFacebook()" class="flex items-center bg-blue-600 text-white px-6 py-2 rounded-lg">
+                    <i class="bi bi-facebook mr-2"></i> Share
+                </button>
+            </div>
+        </div>
+
+        <div class="clay">
+            <h3 class="text-xl font-semibold mb-4 text-center">Recent Donors</h3>
+            <div class="space-y-3">
+                <!-- Blurred donor list for privacy -->
+                <div class="bg-white/50 p-3 rounded-lg backdrop-blur-sm">
+                    <div class="h-6 bg-gray-200 rounded w-3/4"></div>
+                </div>
+                <div class="bg-white/50 p-3 rounded-lg backdrop-blur-sm">
+                    <div class="h-6 bg-gray-200 rounded w-2/3"></div>
+                </div>
+                <div class="bg-white/50 p-3 rounded-lg backdrop-blur-sm">
+                    <div class="h-6 bg-gray-200 rounded w-4/5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function shareOnWhatsApp() {
+            const text = encodeURIComponent("वेदश्री साठी मदत करा - एका लहान मुलीच्या उपचारासाठी मदत करा. https://getupilink.com/upi/8329562560@axl");
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        }
+
+        function shareOnFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
